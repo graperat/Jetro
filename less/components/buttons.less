@@ -1,0 +1,22 @@
+.btn {
+	box-sizing: border-box;
+	display: inline-block;
+	border: none;
+	background: @orange;
+	padding: 10px 15px;
+	color: white;
+	.font-2;
+	text-transform: uppercase;
+	&--portfolio {
+		background: white;
+		color: @gray;
+		&:hover {
+			background: @orange;
+			color: white;
+		}
+	}
+	&--portfolio-active {
+		background: @orange;
+		color: white;
+	}
+}

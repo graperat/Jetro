@@ -1,0 +1,38 @@
+.main-header {
+	.flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 78px;
+	width: 100%;
+	.font-2;
+	.font-md;
+}
+.logo {
+	width: 103px;
+	text-align: left;
+}
+.main-menu {
+	&__list {
+		.flex;
+		list-style: none;
+		text-align: right;
+	}
+	&__item {
+		padding-left: 30px;
+		text-transform: uppercase;
+		a {
+			color: @gray;
+			&:hover {
+				color: @orange;
+			}
+			&:active {
+				color: darken(@orange, 20%);
+			}
+		}
+		&--active {
+			a {
+				color: #E8663C;
+			}
+		}
+	}
+}

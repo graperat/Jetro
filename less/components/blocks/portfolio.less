@@ -1,0 +1,75 @@
+.portfolio-menu {
+	display: flex;
+	padding: 15px 0 40px;
+}
+.portfolios-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 48px;
+}
+.portfolio-header {
+	padding-bottom: 25px;
+	height: 18px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	&--aside {
+		height: 14px;
+		padding-bottom: 20px;
+	}
+	&__title {
+		padding-right: 20px;
+		color: @orange;
+		line-height: 18px;
+		&--aside {
+			padding-right: 15px;
+			line-height: 14px;
+			font-size: 14px;
+		}
+	}
+	&__stripe {
+		flex-grow: 1;
+		background: url('../img/stripe-decorate.png') repeat-x;
+	}
+}
+.portfolio-col {
+	position: relative;
+	width: 190px;
+	height: 36px;
+	border: 1px solid #DBDBDB;
+	border-top: 0;
+	padding: 14px;
+	padding-top: 195px;
+	margin-bottom: 42px;
+	text-transform: uppercase;
+	.font-2;
+	&__title {
+		color: @gray;
+		padding-bottom: 0;
+		font-size: 16px;
+	}
+	&__text {
+		font-size: 10px;
+		color: @orange;
+		padding: 0;
+	}
+	&__image {
+		position: absolute;
+		display: block;
+		width: 220px;
+		height: 183px;
+		top: 0;
+		left: -1px;
+		background-repeat: no-repeat;
+	}
+}
+.slider-plugin__image {
+	width: 940px;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,43 @@
+body {
+	background: url(../img/page-bg.jpg) repeat;
+	display: flex;
+}
+.body-sidebar {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	&__block {
+		background: @orange;
+		opacity: 0.5;
+		&--top {
+			height: 50px;
+			margin-top: 78px;
+		}
+		&--bottom {
+			height: 263px;
+		}
+	}
+}
+.content-center-layot {
+	width: 940px;
+	margin: auto;
+	padding: 0 10px;
+}
+.page-title {
+	height: 50px;
+	line-height: 50px;
+	background: @orange;
+	color: white;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 18px;
+	margin-bottom: 25px;
+}
+.page-wrap {
+	width: 100%;
+	display: flex;
+}
+.page-aside {
+	width: 700px;
+}

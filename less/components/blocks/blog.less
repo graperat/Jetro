@@ -1,0 +1,32 @@
+.blog-item {
+	position: relative;
+	&__icon {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: @orange;
+		top: 0;
+		left: -60px;
+	}
+	&__image {
+		width: 100%;
+		overflow: hidden;
+		height: 300px;
+		img { 
+			position : relative;
+		}
+	}
+}
+.post {
+	.flex;
+	&__info {
+		width: 180px;
+		padding-right: 20px;
+	}
+	&__post {
+		width: 500px;
+	}
+	&__title {
+		color: @orange;
+	}
+}
